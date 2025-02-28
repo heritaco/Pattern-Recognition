@@ -7527,7 +7527,8 @@ a.anchor-link {
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Minimizing-the-classification-error-probability"><strong>Minimizing the classification error probability</strong><a class="anchor-link" href="#Minimizing-the-classification-error-probability">¶</a></h1>
 </div>
 </div>
@@ -7537,7 +7538,8 @@ a.anchor-link {
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Let $R_1$ be the region of the feature space in which we decide in favor of
 $\omega_1$ and $R_2$ be the corresponding region for $\omega_2$.</p>
 <p>Then an <strong>error</strong> is made if $x \in R_1$, although it belongs to $\omega_2$ or if $x \in R_2$, although it belongs to $\omega_1$. That is,
@@ -7551,7 +7553,8 @@ Where $P(\cdot,\cdot)$ is the <strong>joint probability</strong> of two events.<
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>By definition, the <strong>conditional probability</strong> of $B$ assuming $A$ is
 $$P(B|A) = \frac{P(B,A)}{P(A)}$$</p>
 </div>
@@ -7562,13 +7565,13 @@ $$P(B|A) = \frac{P(B,A)}{P(A)}$$</p>
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Therefore, the total error becomes
 \begin{align}
 P_e &amp;=&amp; P(x\in R_2 | \omega_1) P(\omega_1)+P(x\in R_1 | \omega_2) P(\omega_2)\\
 &amp;=&amp; P(\omega_1) \int_{R_2} p(x|\omega_1)dx + P(\omega_2) \int_{R_1} p(x|\omega_2)dx\tag{eq1}
-\end{align}
-Where $ p(x|\omega_1)$ is the <strong>conditional probability density function</strong> of $x$ given $\omega_1$, which describes how the values of $x$ are distributed within the class $\omega_1$.</p>
+\end{align}</p>
 </div>
 </div>
 </div>
@@ -7577,7 +7580,19 @@ Where $ p(x|\omega_1)$ is the <strong>conditional probability density function</
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Where $ p(x|\omega_1)$ is the <strong>conditional probability density function</strong> of $x$ given $\omega_1$, which describes how the values of $x$ are distributed within the class $\omega_1$.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p><strong>Bayes' rule</strong> states that
 $$P(\omega_1 | x) = \frac{p(x|\omega_1)P(\omega_1)}{p(x)}$$</p>
 </div>
@@ -7588,7 +7603,8 @@ $$P(\omega_1 | x) = \frac{p(x|\omega_1)P(\omega_1)}{p(x)}$$</p>
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Factoring we obtain
 $$P(\omega_1|x)p(x)= p(x|\omega_1)P(\omega_1) = P(x, \omega_1) $$</p>
 </div>
@@ -7599,9 +7615,9 @@ $$P(\omega_1|x)p(x)= p(x|\omega_1)P(\omega_1) = P(x, \omega_1) $$</p>
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Substituting in <strong>(eq1)</strong>, we have that
-$$P_e = \int_{R_2} P(\omega_1|x)p(x)dx+\int_{R_1} P(\omega_2|x)p(x)dx \tag{eq2}$$</p>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Substituting in <strong>(eq1)</strong>, we have that</p>
 </div>
 </div>
 </div>
@@ -7610,7 +7626,19 @@ $$P_e = \int_{R_2} P(\omega_1|x)p(x)dx+\int_{R_1} P(\omega_2|x)p(x)dx \tag{eq2}$
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+$$P_e = \int_{R_2} P(\omega_1|x)p(x)dx+\int_{R_1} P(\omega_2|x)p(x)dx \tag{eq2}$$
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>By the <strong>law of total probability</strong>
 $$P(\omega_1) = \int_{\Omega} P(\omega_1 | x) p(x) dx$$</p>
 </div>
@@ -7621,7 +7649,8 @@ $$P(\omega_1) = \int_{\Omega} P(\omega_1 | x) p(x) dx$$</p>
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Since the uniont of the regions $R_1$, $R_2$ partition the space, that is
 $\Omega = R_1 \cup R_2$ and $R_1 \cap R_2=\emptyset$, we have that
 \begin{align} P(\omega_1) &amp;=&amp; \int_{R_1 \cup R_2} P(\omega_1|x) p(x)dx \\
@@ -7636,7 +7665,8 @@ $$\int_{R_2} P(\omega_1|x)p(x)dx= P(\omega_1)-\int_{R_1}P(\omega_1|x)p(x)dx$$</p
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Substituting in <strong>(eq2)</strong>, we obtain
 \begin{align} P_e &amp;=&amp; \left( P(\omega_1)-\int_{R_1}P(\omega_1|x)p(x)dx \right)+\int_{R_1} P(\omega_2|x)p(x)dx\\
 &amp;=&amp; P(\omega_1)+\int_{R_1} \left(-P(\omega_1|x) +P(\omega_2 | x) \right)p(x) dx\\
@@ -7650,7 +7680,8 @@ $$\int_{R_2} P(\omega_1|x)p(x)dx= P(\omega_1)-\int_{R_1}P(\omega_1|x)p(x)dx$$</p
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Because the first element is fixed, $P(\omega_1)$, the <strong>error is minimized</strong> when the value of the integral is larger. This occurs when $R_1$ is the region of space in which
 $$P(\omega_1 |x) &gt; P(\omega_2 |x)$$</p>
 </div>
@@ -7661,7 +7692,8 @@ $$P(\omega_1 |x) &gt; P(\omega_2 |x)$$</p>
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Then, $R_2$ becomes the region where the reverse is true. In other words, when
 $$P(\omega_2 |x ) &gt; P(\omega_1|x)$$</p>
 </div>
@@ -7672,7 +7704,8 @@ $$P(\omega_2 |x ) &gt; P(\omega_1|x)$$</p>
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>Therefore, the <strong>error is minimized</strong> if the partitioning regions $R_1$ and $R_2$ of the feature space are chosen so that
 $$R_1: \qquad P(\omega_1|x) &gt; P(\omega_2|x)$$
 $$R_2: \qquad P(\omega_2 |x) &gt; P(\omega_1|x)$$</p>
@@ -7684,7 +7717,8 @@ $$R_2: \qquad P(\omega_2 |x) &gt; P(\omega_1|x)$$</p>
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="$M$-classes"><strong>$M$-classes</strong><a class="anchor-link" href="#$M$-classes">¶</a></h2>
 </div>
 </div>
@@ -7694,7 +7728,8 @@ $$R_2: \qquad P(\omega_2 |x) &gt; P(\omega_1|x)$$</p>
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>So far, we have dealt with the simple case of two classes. Generalizations to
 the multiclass case are straightforward. In a classification task with $M$ classes, $\omega1, \omega_2,\ldots, \omega_M$, an unknown pattern, represented by the feature vector $x$, is assigned to class $\omega_i$ if
 $$P(\omega_1 | x) &gt; P(\omega_j |x), \qquad \forall j\neq i$$</p>
@@ -7706,7 +7741,8 @@ $$P(\omega_1 | x) &gt; P(\omega_j |x), \qquad \forall j\neq i$$</p>
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>It can be shown that such a choice also <strong>minimizes the probability of classification error</strong>.</p>
 </div>
 </div>
@@ -7716,7 +7752,8 @@ $$P(\omega_1 | x) &gt; P(\omega_j |x), \qquad \forall j\neq i$$</p>
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Discriminant-functions"><strong>Discriminant functions</strong><a class="anchor-link" href="#Discriminant-functions">¶</a></h1>
 </div>
 </div>
@@ -7726,7 +7763,8 @@ $$P(\omega_1 | x) &gt; P(\omega_j |x), \qquad \forall j\neq i$$</p>
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>It is by now clear that minimizing either the error probability  is equivalent to <strong>partitioning</strong> the feature space into $M$ regions, for a task with $M$ classes.</p>
 </div>
 </div>
@@ -7736,7 +7774,8 @@ $$P(\omega_1 | x) &gt; P(\omega_j |x), \qquad \forall j\neq i$$</p>
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>If regions $R_i$, $R_j$ happen to be <strong>contiguous</strong>, then they are separated by a <strong>decision surface</strong> in the multidimensional feature space. For the minimum error probability case, this is described by the equation
 $$P(\omega_i | x) - P(\omega_j|x) = 0$$</p>
 </div>
@@ -7747,7 +7786,8 @@ $$P(\omega_i | x) - P(\omega_j|x) = 0$$</p>
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>From the one side of the surface this difference is positive, and from the other
 it is negative.</p>
 <p>Sometimes, instead of working directly with probabilities, it may be more convenient, from a mathematical point of view, to work with an equivalent function of them, for example,
@@ -7761,7 +7801,8 @@ where $f(\cdot)$ is a <strong>monotonically increasing function</strong>. $g_i(x
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>The <strong>decision test</strong>
 $$P(\omega_i|x) &gt; P(\omega_j|x) \qquad \forall j\neq i$$
 is now stated as
@@ -7774,7 +7815,8 @@ $$\text{classify} \ x \ \text{in} \ \omega_i \quad \text{if} \quad g_i(x) &gt; g
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>The <strong>decision surfaces</strong>, separating contiguous regions, are described by
 $$g_{ij}(x) \equiv g_i(x) - g_j(x) = 0, \qquad i,j=1,2,\ldots,M, \ i\neq j$$</p>
 </div>
@@ -7785,7 +7827,8 @@ $$g_{ij}(x) \equiv g_i(x) - g_j(x) = 0, \qquad i,j=1,2,\ldots,M, \ i\neq j$$</p>
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>So far, we have approached the classification problem via <strong>Bayesian probabilistic approache</strong> and the goal was to <strong>minimize the classification error probability</strong> or the <strong>risk</strong>.</p>
 <p>However, as we will soon see, not all problems are well suited to such approaches.</p>
 <blockquote>
