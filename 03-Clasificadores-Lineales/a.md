@@ -1,0 +1,1 @@
+Si es linealmente separable hay una linea que separa perfectamente a los puntos
